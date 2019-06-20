@@ -23,8 +23,6 @@ tint2 & # Panel
 conky --config=$HOME/.config/conky/conky1.conf & # System Monitor
 conky --config=$HOME/.config/conky/conky2.conf & # Todos
 
-xscreensaver -no-splash & # Screen lock
-
 nm-applet & # Network manager
 blueman-applet & #Bluetooth applet
 
