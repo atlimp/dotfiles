@@ -1,4 +1,5 @@
 #!/bin/bash
+PATH=$PATH:$HOME/bin
 source $HOME/.bashrc
 if [[ $(pgrep Xorg) == "" ]]; then
 	

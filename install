@@ -1,7 +1,27 @@
 #!/bin/bash
 
+packages=(
+	"openbox"
+	"pcmanfm"
+	"conky"
+	"sakura"
+	"tint2"
+	"compton"
+	"xorg"
+	"i3lock"
+	"dmenu"
+	"feh"
+	"network-manager"
+	"pavucontrol"
+	"scrot"
+	"imagemagick"
+	"hibernate"
+	"libnotify-bin"
+	"network-manager-gnome"
+)
+
 sudo apt update
 
-sudo apt install openbox pcmanfm conky sakura tint2 compton xorg i3lock
+sudo apt install $(echo "${packages[*]}")
 
 ./configure

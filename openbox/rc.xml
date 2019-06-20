@@ -497,7 +497,7 @@
 	
 	<keybind key="W-l">
 		<action name="Execute">
-				<command>/home/atli/bin/lock</command>
+				<command>lock</command>
 		</action>
 	</keybind>
 
