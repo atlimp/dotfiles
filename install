@@ -1,6 +1,7 @@
 #!/bin/bash
 
 packages=(
+	"unclutter"
 	"neofetch"
 	"vim"
 	"fortune"

@@ -17,6 +17,9 @@
 #xfce-mcs-manager &
 #
 
+# Hide mouse
+unclutter -idle 5 -jitter 100
+
 compton -Cb &
 
 tint2 & # Panel
