@@ -1,6 +1,9 @@
 #!/bin/bash
 
 packages=(
+	"fortune"
+	"fortunes-off"
+	"cowsay"
 	"openbox"
 	"pcmanfm"
 	"conky"
