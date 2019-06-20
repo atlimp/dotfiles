@@ -3,6 +3,7 @@
 config=("backgrounds" "conky" "openbox" "pcmanfm" "sakura" "tint2")
 dots=(".aliases" ".bash_profile" ".bashrc" ".func" ".profile" ".vimrc" ".xinitrc")
 path=$(dirname $(realpath $0))
+
 mkdir -p $HOME/.config
 
 for i in "${config[@]}"; do

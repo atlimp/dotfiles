@@ -7,7 +7,7 @@
 rounded = 0
 border_width = 0
 border_sides = TBLR
-background_color = #000000 60
+background_color = #000000 0
 border_color = #000000 0
 background_color_hover = #000000 60
 border_color_hover = #000000 0
@@ -167,7 +167,7 @@ mouse_scroll_down = iconify
 #-------------------------------------
 # System tray (notification area)
 systray_padding = 7 0 5
-systray_background_id = 8
+systray_background_id = 1
 systray_sort = ascending
 systray_icon_size = 24
 systray_icon_asb = 100 0 30
@@ -195,7 +195,7 @@ time2_timezone =
 time2_font = Ubuntu Condensed Bold 10
 clock_font_color = #ffffff 100
 clock_padding = 6 0
-clock_background_id = 8
+clock_background_id = 1
 clock_tooltip = Today is %A, %dth Day Of %B !
 clock_tooltip_timezone = 
 clock_lclick_command = gsimplecal
@@ -213,7 +213,7 @@ bat1_font = Ubuntu Condensed Bold 12
 bat2_font = Ubuntu Condensed Regular 0
 battery_font_color = #ffffff 100
 battery_padding = 5 5
-battery_background_id = 8
+battery_background_id = 1
 battery_hide = 101
 battery_lclick_command = xfce4-power-manager-settings
 battery_rclick_command = xfce4-power-manager-settings
@@ -228,7 +228,7 @@ ac_disconnected_cmd =
 tooltip_show_timeout = 0
 tooltip_hide_timeout = 0
 tooltip_padding = 5 3
-tooltip_background_id = 7
+tooltip_background_id = 1
 tooltip_font_color = #fafafa 100
 tooltip_font = Noto Sans 10
 
