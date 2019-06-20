@@ -1,0 +1,39 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+# If you want to use GNOME config tools...
+#
+#if test -x /usr/lib/x86_64-linux-gnu/gnome-settings-daemon >/dev/null; then
+#  /usr/lib/x86_64-linux-gnu/gnome-settings-daemon &
+#elif which gnome-settings-daemon >/dev/null 2>&1; then
+#  gnome-settings-daemon &
+#fi
+
+# If you want to use XFCE config tools...
+#
+#xfce-mcs-manager &
+#
+
+compton -Cb &
+
+tint2 & # Panel
+conky --config=$HOME/.config/conky/conky1.conf & # System Monitor
+conky --config=$HOME/.config/conky/conky2.conf & # Todos
+
+xscreensaver -no-splash & # Screen lock
+
+nm-applet & # Network manager
+blueman-applet & #Bluetooth applet
+
+feh --bg-fill "$HOME/.config/backgrounds/$(ls $HOME/.config/backgrounds | shuf | head -1)" 
+
+
+/usr/lib/notification-daemon/notification-daemon & #For notify-send
+
+# Tap touchpad
+xinput set-prop 'AlpsPS/2 ALPS DualPoint TouchPad' 'libinput Tapping Enabled' 1
+# Natural Scrolling
+xinput set-prop 'AlpsPS/2 ALPS DualPoint TouchPad' 'libinput Natural Scrolling Enabled' 1
