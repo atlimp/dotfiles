@@ -18,7 +18,7 @@
 #
 
 # Hide mouse
-unclutter -idle 10 -jitter 100 &
+unclutter -idle 10 &
 
 compton -Cb &
 
