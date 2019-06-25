@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Leve-Cyan</name>
+    <name>Orang</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -348,8 +348,8 @@
         <height>70%</height>
       </action>
     </keybind>
-	<!-- Top Left -->
-	<keybind key="A-W-Left">
+    <!-- Top Left -->
+    <keybind key="A-W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -358,8 +358,8 @@
         <width>50%</width>
       </action>
     </keybind>
-	<!-- Top Right -->
-	<keybind key="A-W-Right">
+    <!-- Top Right -->
+    <keybind key="A-W-Right">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>-0</x>
@@ -367,9 +367,9 @@
         <height>50%</height>
         <width>50%</width>
       </action>
-	</keybind>
-	<!-- Bottom Left -->
-	<keybind key="C-W-Left">
+    </keybind>
+    <!-- Bottom Left -->
+    <keybind key="C-W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -378,8 +378,8 @@
         <width>50%</width>
       </action>
     </keybind>
-	<!-- Bottom Right -->
-	<keybind key="C-W-Right">
+    <!-- Bottom Right -->
+    <keybind key="C-W-Right">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>-0</x>
@@ -387,20 +387,18 @@
         <height>50%</height>
         <width>50%</width>
       </action>
-	</keybind>
-
-	<keybind key="XF86MonBrightnessUp">
-		<action name="Execute">
-			<command>xbacklight -inc 10</command>
-    	</action>
-	</keybind>
-	<keybind key="XF86MonBrightnessDown">
-		<action name="Execute">
-			<command>xbacklight -dec 10</command>
-    	</action>
-	</keybind>
-
-	<!-- Volume -->
+    </keybind>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <command>xbacklight -inc 10</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <command>xbacklight -dec 10</command>
+      </action>
+    </keybind>
+    <!-- Volume -->
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
         <startupnotify>
@@ -464,44 +462,38 @@
       <action name="Execute">
         <command>pavucontrol</command>
       </action>
-	</keybind>
-
-	<keybind key="C-S-o">
-		<action name="Execute">
-			<command>dmenu_todo</command>
-		</action>
-	</keybind>
-	<keybind key="C-S-k">
-		<action name="Execute">
-			<command>dmenu_notes</command>
-		</action>
-	</keybind>
-
-	<keybind key="C-S-l">
-		<action name="Execute">
-			<command>dmenu_doneNotes</command>
-		</action>
-	</keybind>
-
-	<keybind key="C-S-p">
-		<action name="Execute">
-			<command>dmenu_markAsDone</command>
-		</action>
-	</keybind>
-	
-	<keybind key="W-s">
-		<action name="Execute">
-			<command>dmenu_search</command>
-		</action>
-	</keybind>
-	
-	<keybind key="W-l">
-		<action name="Execute">
-				<command>lock</command>
-		</action>
-	</keybind>
-
-	<!-- Restart Openbox -->
+    </keybind>
+    <keybind key="C-S-o">
+      <action name="Execute">
+        <command>dmenu_todo</command>
+      </action>
+    </keybind>
+    <keybind key="C-S-k">
+      <action name="Execute">
+        <command>dmenu_notes</command>
+      </action>
+    </keybind>
+    <keybind key="C-S-l">
+      <action name="Execute">
+        <command>dmenu_doneNotes</command>
+      </action>
+    </keybind>
+    <keybind key="C-S-p">
+      <action name="Execute">
+        <command>dmenu_markAsDone</command>
+      </action>
+    </keybind>
+    <keybind key="W-s">
+      <action name="Execute">
+        <command>dmenu_search</command>
+      </action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>lock</command>
+      </action>
+    </keybind>
+    <!-- Restart Openbox -->
     <keybind key="W-F11">
       <action name="Execute">
         <command>openbox --restart</command>
@@ -512,7 +504,7 @@
       <action name="Execute">
         <command>openbox --reconfigure</command>
       </action>
-	</keybind>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -970,9 +962,8 @@
 
   # end of the example
 	-->
-
-  <application class="*">
-	<decor>no</decor>
-  </application>
+    <application class="*">
+      <decor>no</decor>
+    </application>
   </applications>
 </openbox_config>
