@@ -18,7 +18,7 @@
 #
 
 # Autolock on inactivity
-xautolock -time 10 -locker lock
+xautolock -time 10 -locker lock &
 
 # Hide mouse
 unclutter -idle 10 &
