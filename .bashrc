@@ -112,5 +112,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export EDITOR=vim
+
 source $HOME/.aliases
 source $HOME/.func
