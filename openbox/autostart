@@ -26,14 +26,16 @@ unclutter -idle 10 &
 compton -Cb &
 
 tint2 & # Panel
+
+fortunecow
 conky --config=$HOME/.config/conky/conky1.conf & # System Monitor
 conky --config=$HOME/.config/conky/conky2.conf & # Todos
 
 nm-applet & # Network manager
 blueman-applet & #Bluetooth applet
 
+# Background
 feh --bg-fill "$HOME/.config/backgrounds/$(ls $HOME/.config/backgrounds | shuf | head -1)" 
-
 
 /usr/lib/notification-daemon/notification-daemon & #For notify-send
 
