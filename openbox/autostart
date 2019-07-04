@@ -33,7 +33,7 @@ conky --config=$HOME/.config/conky/conky2.conf & # Todos
 
 nm-applet & # Network manager
 blueman-applet & #Bluetooth applet
-
+volumeicon
 # Background
 feh --bg-fill "$HOME/.config/backgrounds/$(ls $HOME/.config/backgrounds | shuf | head -1)" 
 

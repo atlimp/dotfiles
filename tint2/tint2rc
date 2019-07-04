@@ -184,7 +184,7 @@ launcher_icon_theme_override = 1
 startup_notifications = 1
 launcher_tooltip = 1
 #launcher_item_app = /usr/share/applications/exo-file-manager.desktop
-launcher_item_app = /usr/share/applications/pavucontrol.desktop
+#launcher_item_app = /usr/share/applications/pavucontrol.desktop
 #-------------------------------------
 # Clock
 time1_format = %H:%M %d %b
