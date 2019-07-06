@@ -39,7 +39,3 @@ feh --bg-fill "$HOME/.config/backgrounds/$(ls $HOME/.config/backgrounds | shuf |
 
 /usr/lib/notification-daemon/notification-daemon & #For notify-send
 
-# Tap touchpad
-xinput set-prop 'AlpsPS/2 ALPS DualPoint TouchPad' 'libinput Tapping Enabled' 1
-# Natural Scrolling
-xinput set-prop 'AlpsPS/2 ALPS DualPoint TouchPad' 'libinput Natural Scrolling Enabled' 1
