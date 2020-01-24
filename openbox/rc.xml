@@ -388,6 +388,18 @@
         <width>50%</width>
       </action>
     </keybind>
+	<!-- Move to monitor 1 -->
+	<keybind key="W-1">
+	  <action name="MoveResizeTo">
+		<monitor>1</monitor>		
+	  </action>
+	</keybind>
+	<!-- Move to monitor 2 -->
+	<keybind key="W-2">
+	  <action name="MoveResizeTo">
+		<monitor>2</monitor>		
+	  </action>
+	</keybind>
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
         <command>xbacklight -inc 10</command>

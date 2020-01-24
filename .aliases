@@ -2,8 +2,6 @@
 alias start='startx && exit'
 
 alias ll='ls -la'
-export hekla=amp17@hekla.rhi.hi.is
-
 alias ..='cd ..'
 
 alias z='zathura --fork'
@@ -13,4 +11,18 @@ alias gac='git add . && git commit'
 alias gps='git push origin master'
 
 alias open='xdg-open'
-alias copy="xclip -selection clipboard"
+alias cpy="xclip -selection clipboard"
+alias pst="xclip -o -selection clipboard"
+
+black=$(tput setaf 0)
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+yellow=$(tput setaf 3)
+blue=$(tput setaf 4)
+magenta=$(tput setaf 5)
+cyan=$(tput setaf 6)
+white=$(tput setaf 7)
+reset=$(tput sgr0)
+bold=$(tput bold)
+
+export PS1="\[$bold$yellow\]\u\[$reset$bold$cyan\]@\[$reset$bold$green\]\h\[$reset\]:\[$reset$bold$cyan\]\w\[$reset\]$ "

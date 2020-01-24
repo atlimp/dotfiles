@@ -1,5 +1,4 @@
 [sakura]
-colorset1_fore=rgb(192,192,192)
 colorset1_back=rgba(20,20,20,0.95)
 colorset1_curs=rgb(255,255,255)
 colorset1_key=F1
@@ -41,7 +40,7 @@ stop_tab_cycling_at_end_tabs=No
 allow_bold=Yes
 cursor_type=VTE_CURSOR_SHAPE_BLOCK
 word_chars=-,./?%&#_~:
-palette=tango
+palette=solarized_dark
 add_tab_accelerator=5
 del_tab_accelerator=5
 switch_tab_accelerator=8

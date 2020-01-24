@@ -58,7 +58,8 @@ if has('syntax') && has('eval')
 endif
 
 set tabstop=4
-set number
+set nonu
+set relativenumber
 set nobackup
 set nowritebackup
 

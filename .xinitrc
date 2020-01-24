@@ -1,6 +1,5 @@
-# Tap touchpad
-xinput set-prop 'AlpsPS/2 ALPS DualPoint TouchPad' 'libinput Tapping Enabled' 1
-# Natural Scrolling
-xinput set-prop 'AlpsPS/2 ALPS DualPoint TouchPad' 'libinput Natural Scrolling Enabled' 1
+#!/bin/sh
+
+xset s 1800 1800 #blank screen after 30 min
 
 exec openbox-session
