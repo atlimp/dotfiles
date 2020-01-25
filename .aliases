@@ -1,6 +1,4 @@
 #!/bin/bash
-alias start='startx && exit'
-
 alias ll='ls -la'
 alias ..='cd ..'
 

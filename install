@@ -26,6 +26,19 @@ packages=(
 	"hibernate"
 	"libnotify-bin"
 	"network-manager-gnome"
+	"pulsemixer"
+	"texlive-latex-recommended"
+	"texlive-latex-extra"3
+	"texlive-fonts-extra"
+	"texlive-extra-utils"
+	"zathura"
+	"latexmk"
+	"libx11-dev"
+	"libxinerama-dev"
+	"libxft-dev"
+	"xclip"
+	"speedtest-cli"
+	"rsync"
 )
 
 sudo apt update

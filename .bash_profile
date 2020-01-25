@@ -9,5 +9,5 @@ if [[ $(pgrep Xorg) == "" ]]; then
 		sleep 1
 	done	
 	echo
-	start
+	startx && exit
 fi

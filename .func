@@ -1,3 +1,33 @@
 #!/bin/bash
 
 cd(){ builtin cd $@ && pwd && ls -l; }
+
+tex() {
+	document=${@%/}
+
+	# If new document create new
+	if [ ! -d $document ]; then
+			mkdir -p $document
+			cp $HOME/.tex/example.tex "$document/$document.tex"
+	fi
+
+	builtin cd $document
+
+	latexmk -pvc -pdf $document.tex > /dev/null 2>&1 &
+	latexmkpid=$!
+
+	# Wait for render of pdf
+	while [ ! -f "$document.pdf" ]; do :; done
+
+	zathura "$document.pdf" > /dev/null 2>&1&
+	zathurapid=$!
+
+	echo "zathura: $zathurapid"
+	echo "latexmk: $latexmkpid"
+
+	vim "+32" "$document.tex"
+	
+	kill $latexmkpid $zathurapid
+
+	builtin cd ..
+}
