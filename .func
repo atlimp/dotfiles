@@ -22,9 +22,6 @@ tex() {
 	zathura "$document.pdf" > /dev/null 2>&1&
 	zathurapid=$!
 
-	echo "zathura: $zathurapid"
-	echo "latexmk: $latexmkpid"
-
 	vim "+32" "$document.tex"
 	
 	kill $latexmkpid $zathurapid
