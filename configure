@@ -14,3 +14,19 @@ done
 for i in "${dots[@]}"; do
 	ln -sfv "$path/$i" $HOME/ 
 done
+
+# DNS settings
+
+echo "Change DNS server? "
+read ans
+
+if [[ "$ans" == "Y" || "$ans" == "y" ]]; then
+	echo "Input address: "
+	read addr
+	if [[ "$addr" != "" ]]; then
+		sudo resolvconf --enable-updates
+		echo "nameserver $addr" | sudo tee -a /etc/resolvconf/resolv.conf.d/head
+		sudo resolvconf -u
+	fi
+fi
+

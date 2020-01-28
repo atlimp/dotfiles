@@ -470,11 +470,6 @@
         <command>dmenu_umount</command>
       </action>
     </keybind>
-    <keybind key="C-A-p">
-      <action name="Execute">
-        <command>pavucontrol</command>
-      </action>
-    </keybind>
     <keybind key="C-S-o">
       <action name="Execute">
         <command>dmenu_todo</command>
