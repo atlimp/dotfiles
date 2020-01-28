@@ -2,9 +2,9 @@
 
 config=("backgrounds" "conky" "openbox" "pcmanfm" "sakura" "tint2")
 dots=(".aliases" ".bash_profile" ".bashrc" ".func" ".profile" ".vimrc" ".xinitrc" ".tex")
-path=$(dirname $(realpath $0))
+path="$(dirname "$(realpath "$0")")"
 
-mkdir -p $HOME/.config
+mkdir -p "$HOME/.config"
 
 for i in "${config[@]}"; do
 	rm -r "$HOME/.config/$i"
@@ -12,17 +12,17 @@ for i in "${config[@]}"; do
 done
 
 for i in "${dots[@]}"; do
-	ln -sfv "$path/$i" $HOME/ 
+	ln -sfv "$path/$i" "$HOME/" 
 done
 
 # DNS settings
 
-echo "Change DNS server? "
-read ans
+echo -n "Change DNS server?[Y/n] "
+read -r ans
 
-if [[ "$ans" == "Y" || "$ans" == "y" ]]; then
-	echo "Input address: "
-	read addr
+if [[ ("$ans" == "Y" || "$ans" == "y") || "$ans" == "" ]]; then
+	echo -n "Input address: "
+	read -r addr
 	if [[ "$addr" != "" ]]; then
 		sudo resolvconf --enable-updates
 		echo "nameserver $addr" | sudo tee -a /etc/resolvconf/resolv.conf.d/head
