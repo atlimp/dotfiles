@@ -39,6 +39,8 @@ packages=(
 	"xclip"
 	"speedtest-cli"
 	"rsync"
+	"wmctrl"
+	"resolvconf"
 )
 
 sudo apt update

@@ -4,6 +4,8 @@ cd(){ builtin cd $@ && pwd && ls -l; }
 
 tex() {
 	document=${@%/}
+	
+	wmctrl -r :ACTIVE: -N "$document"
 
 	# If new document create new
 	if [ ! -d $document ]; then
@@ -19,12 +21,16 @@ tex() {
 	# Wait for render of pdf
 	while [ ! -f "$document.pdf" ]; do :; done
 
-	zathura "$document.pdf" > /dev/null 2>&1&
-	zathurapid=$!
+	zathura --fork "$document.pdf"
+	zathurapid=$(ps aux | grep zathura | grep $document | awk '{print $2}')
+	
+	wmctrl -a "$document"
 
 	vim "+32" "$document.tex"
 	
 	kill $latexmkpid $zathurapid
 
 	builtin cd ..
+
+	wmctrl -r :ACTIVE: -N "sakura"
 }
