@@ -17,7 +17,6 @@ packages=(
 	"compton"
 	"xorg"
 	"i3lock"
-	"dmenu"
 	"feh"
 	"network-manager"
 	"pavucontrol"
@@ -28,7 +27,7 @@ packages=(
 	"network-manager-gnome"
 	"pulsemixer"
 	"texlive-latex-recommended"
-	"texlive-latex-extra"3
+	"texlive-latex-extra"
 	"texlive-fonts-extra"
 	"texlive-extra-utils"
 	"zathura"
