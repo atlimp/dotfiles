@@ -1,6 +1,6 @@
 # After install
 
-Get `dmenu` and `xkblayout-state`
+Get [dmenu](https://git.suckless.org/dmenu) and [xkblayout-state](https://github.com/nonpop/xkblayout-state.git)
 
 ## Natural scrolling and tap to click touchpad
 
