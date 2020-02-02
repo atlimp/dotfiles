@@ -35,6 +35,8 @@ XKBOPTIONS="grp:alt_shift_toggle,grp_led:scroll"
 BACKSPACE="guess"
 ```
 
+Then run
+```sudo dpkg-reconfigure keyboard-configuration``` 
 ## Suspend-then-hibernate
 
 ### `/etc/systemd/logind.conf`
@@ -128,3 +130,13 @@ ExecStart=/home/atli/bin/lock
 WantedBy=sleep.target
 ```
 
+## Backlight
+
+```
+/etc/X11/xorg.conf.d/20-intel.conf
+Section "Device"
+    Identifier  "Intel Graphics" 
+    Driver      "intel"
+    Option      "Backlight"  "intel_backlight"
+EndSection
+```
