@@ -11,6 +11,7 @@ alias gps='git push origin master'
 alias open='xdg-open'
 alias cpy="xclip -selection clipboard"
 alias pst="xclip -o -selection clipboard"
+eval $(thefuck --alias)
 
 black=$(tput setaf 0)
 red=$(tput setaf 1)

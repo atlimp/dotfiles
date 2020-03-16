@@ -21,7 +21,7 @@
 xautolock -time 30 -locker "lock 3" &
 
 # Hide mouse
-unclutter -idle 10 &
+#unclutter -idle 10 &
 
 compton -Cb &
 

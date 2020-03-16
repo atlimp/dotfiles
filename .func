@@ -34,3 +34,7 @@ tex() {
 
 	wmctrl -r :ACTIVE: -N "sakura"
 }
+
+fcd() {
+	cd "$(find $HOME -type d | fzf)"
+}

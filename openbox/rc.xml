@@ -243,7 +243,7 @@
     <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -s</command>
+		<command>scrot -s</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
@@ -254,7 +254,7 @@
           <action name="Raise"/>
           <action name="Unshade"/>
         </finalactions>
-      </action>
+</action>
     </keybind>
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
@@ -310,7 +310,7 @@
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot</command>
+	    <command>scrot</command>
       </action>
     </keybind>
     <!-- Resize windows -->
@@ -498,6 +498,11 @@
     <keybind key="W-l">
       <action name="Execute">
         <command>lock</command>
+      </action>
+    </keybind>
+    <keybind key="C-S-e">
+      <action name="Execute">
+        <command>dmenu_expenses</command>
       </action>
     </keybind>
     <!-- Restart Openbox -->

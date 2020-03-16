@@ -140,3 +140,18 @@ Section "Device"
     Option      "Backlight"  "intel_backlight"
 EndSection
 ```
+
+## autorandr
+
+install autorandr
+
+### Set default profile
+
+Example `~/.config/autorandr/settings.ini`
+```
+[config]
+default=Default-profile
+```
+
+Save other profiles
+`autorandr --save name-of-new-profile`
