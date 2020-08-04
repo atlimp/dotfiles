@@ -13,6 +13,11 @@ alias cpy="xclip -selection clipboard"
 alias pst="xclip -o -selection clipboard"
 eval $(thefuck --alias)
 
+alias trr='transmission-remote'
+alias trc='transmission-remote-cli'
+
+alias python='python3'
+alias lsblk='lsblk -o NAME,SIZE,FSTYPE,MOUNTPOINT'
 black=$(tput setaf 0)
 red=$(tput setaf 1)
 green=$(tput setaf 2)
@@ -25,3 +30,6 @@ reset=$(tput sgr0)
 bold=$(tput bold)
 
 export PS1="\[$bold$yellow\]\u\[$reset$bold$cyan\]@\[$reset$bold$green\]\h\[$reset\]:\[$reset$bold$cyan\]\w\[$reset\]$ "
+alias ralan='ssh -p 8909 amp@ralan'
+alias trr='transmission-remote'
+alias trc='tremc'
