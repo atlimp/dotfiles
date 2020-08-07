@@ -33,3 +33,6 @@ export PS1="\[$bold$yellow\]\u\[$reset$bold$cyan\]@\[$reset$bold$green\]\h\[$res
 alias ralan='ssh -p 8909 amp@ralan'
 alias trr='transmission-remote'
 alias trc='tremc'
+
+alias malan="sudo mount alan:/home/amp/ $HOME/alan/ && sudo mount alan:/home/amp/MEDIA/ $HOME/alan/MEDIA/"
+alias ualan="sudo umount $HOME/alan/MEDIA/ && sudo umount $HOME/alan/"
