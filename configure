@@ -1,6 +1,6 @@
 #!/bin/bash
 
-config=("backgrounds" "conky" "openbox" "pcmanfm" "sakura" "tint2")
+config=("autorandr" "backgrounds" "conky" "openbox" "pcmanfm" "sakura" "tint2")
 dots=(".aliases" ".bash_profile" ".bashrc" ".func" ".profile" ".vimrc" ".xinitrc" ".tex")
 path="$(dirname "$(realpath "$0")")"
 
