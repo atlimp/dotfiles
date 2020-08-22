@@ -113,7 +113,7 @@ HibernateDelaySec=60min
 
 ## Lock after suspend
 
-### `/etc/systemd/system/resume.conf`
+### `/lib/systemd/system/resume.service`
 
 ```
 [Unit]
@@ -128,6 +128,10 @@ ExecStart=/home/atli/bin/lock
 
 [Install]
 WantedBy=sleep.target
+```
+```
+systemctl enable resume.service
+systemctl start resume.service
 ```
 
 ## Backlight

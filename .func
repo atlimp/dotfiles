@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd(){ builtin cd $@ && pwd && ls -l; }
+cd(){ builtin cd "$@" && pwd && ls -l; }
 
 tex() {
 	document=${@%/}
@@ -70,4 +70,14 @@ fkill() {
     then
         echo $pid | xargs kill -${1:-9}
     fi
+}
+
+malan() {
+	mount $HOME/alan
+	mount $HOME/alan/MEDIA
+}
+
+ualan() {
+	umount $HOME/alan/MEDIA
+	umount $HOME/alan
 }
