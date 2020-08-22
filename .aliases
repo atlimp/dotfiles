@@ -17,6 +17,7 @@ alias trr='transmission-remote'
 alias trc='transmission-remote-cli'
 
 alias python='python3'
+alias pip='pip3'
 alias lsblk='lsblk -o NAME,SIZE,FSTYPE,MOUNTPOINT'
 black=$(tput setaf 0)
 red=$(tput setaf 1)

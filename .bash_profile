@@ -1,7 +1,8 @@
 #!/bin/bash
-PATH=$PATH:$HOME/bin
 
-source $HOME/.bashrc
+[ -n "$BASH_VERSION" ] && [ -f "$HOME/.bashrc" ] && source "$HOME/.bashrc"
+[ -d "$HOME/.local/bin" ] && export PATH="$HOME/.local/bin:$PATH"
+[ -d "$HOME/bin" ] && export PATH="$HOME/bin:$PATH"
 
 if [[ $(pgrep Xorg) == "" ]]; then
 	
