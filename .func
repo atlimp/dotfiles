@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd(){ builtin cd "$@" && pwd && ls -l; }
+cd(){ builtin cd "$@" && pwd && ls -lh; }
 
 tex() {
 	document=${@%/}
